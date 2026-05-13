@@ -1,0 +1,21 @@
+:root {
+  --surface-0: #09090b;
+  --surface-1: #0f1115;
+  --surface-2: #14161c;
+  --text-primary: #f4f4f5;
+  --text-secondary: #a1a1aa;
+  --accent: #f59e0b;
+  --accent-soft: rgba(245, 158, 11, 0.18);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
