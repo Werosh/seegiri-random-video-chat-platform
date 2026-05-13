@@ -201,7 +201,7 @@ export function LandingPage() {
                 {...fadeUp}
               >
                 <h1 className="font-headline text-sg-on-surface mb-sg-md max-w-[18ch] text-[clamp(2.5rem,5.5vw,3.75rem)] leading-[1.05] font-bold tracking-tight sm:max-w-xl lg:max-w-none">
-                  Talk to someone new.
+                  Talk To Someone New
                 </h1>
 
                 <p className="font-body text-sg-on-surface-variant mb-sg-sm max-w-md text-lg leading-relaxed md:text-xl">
@@ -216,26 +216,26 @@ export function LandingPage() {
                 <div className="gap-sg-md mb-sg-lg flex w-full max-w-md flex-col sm:flex-row sm:justify-center lg:max-w-none lg:justify-start">
                   <Link
                     href={ROUTES.chat}
-                    className="bg-sg-secondary font-body px-sg-xl py-sg-md hover:bg-sg-secondary/92 inline-flex items-center justify-center rounded-xl text-lg font-semibold tracking-wide text-white transition-colors active:scale-[0.98]"
+                    className="font-body px-sg-xl py-sg-md hover:bg-sg-secondary/92 inline-flex items-center justify-center rounded-xl bg-[#a58327] text-lg font-semibold tracking-wide text-white transition-colors active:scale-[0.98]"
                   >
-                    Start a chat
+                    Start Chat
                   </Link>
                   <a
                     href={`#${SECTION_IDS.howItWorks}`}
                     className="font-body text-sg-on-surface px-sg-xl py-sg-md inline-flex items-center justify-center rounded-xl border border-white/20 text-lg font-semibold tracking-wide transition-colors hover:border-white/35 hover:bg-white/5"
                   >
-                    How it works
+                    How It Works
                   </a>
                 </div>
 
                 <dl className="font-body text-sg-on-surface-variant grid max-w-md gap-y-2 text-left text-sm leading-snug sm:grid-cols-2 sm:gap-x-8 lg:max-w-lg">
                   <div>
                     <dt className="text-sg-on-surface font-medium">Free</dt>
-                    <dd>Jump in without paying.</dd>
+                    <dd>Jump In Without Paying.</dd>
                   </div>
                   <div>
                     <dt className="text-sg-on-surface font-medium">Straightforward</dt>
-                    <dd>No gamified upsells.</dd>
+                    <dd>No Gamified Upsells.</dd>
                   </div>
                 </dl>
               </motion.div>
