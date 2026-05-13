@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "../styles/theme.css";
+@import "../styles/landing.css";
 
 @theme inline {
   --font-sans: var(--font-plus-jakarta);
@@ -9,6 +10,12 @@
 html,
 body {
   height: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 body {

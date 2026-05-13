@@ -1,0 +1,206 @@
+/* Seegiri landing — design tokens (Tailwind v4 @theme) + utilities */
+
+@theme inline {
+  /* Surfaces */
+  --color-sg-background: #1e0d1f;
+  --color-sg-surface: #1e0d1f;
+  --color-sg-surface-dim: #1e0d1f;
+  --color-sg-surface-container-lowest: #180819;
+  --color-sg-surface-container-low: #271527;
+  --color-sg-surface-container: #2b192b;
+  --color-sg-surface-container-high: #362436;
+  --color-sg-surface-container-highest: #422e41;
+  --color-sg-surface-variant: #422e41;
+  --color-sg-surface-bright: #473346;
+
+  /* Content */
+  --color-sg-on-background: #f7daf3;
+  --color-sg-on-surface: #f7daf3;
+  --color-sg-on-surface-variant: #dac1be;
+  --color-sg-inverse-surface: #f7daf3;
+  --color-sg-inverse-on-surface: #3d2a3d;
+
+  /* Brand */
+  --color-sg-primary: #ffb4ac;
+  --color-sg-on-primary: #5a1b17;
+  --color-sg-primary-container: #e3867d;
+  --color-sg-on-primary-container: #62211c;
+  --color-sg-primary-fixed: #ffdad6;
+  --color-sg-on-primary-fixed: #3d0505;
+  --color-sg-on-primary-fixed-variant: #77302b;
+  --color-sg-inverse-primary: #954741;
+
+  --color-sg-secondary: #efc13e;
+  --color-sg-on-secondary: #3e2e00;
+  --color-sg-secondary-container: #ba9000;
+  --color-sg-on-secondary-container: #3c2c00;
+  --color-sg-secondary-fixed: #ffdf94;
+  --color-sg-on-secondary-fixed: #241a00;
+  --color-sg-on-secondary-fixed-variant: #594400;
+  --color-sg-secondary-fixed-dim: #efc13e;
+
+  --color-sg-tertiary: #e3c0a0;
+  --color-sg-on-tertiary: #422c15;
+  --color-sg-tertiary-container: #ba9a7c;
+  --color-sg-on-tertiary-container: #49321b;
+  --color-sg-tertiary-fixed: #ffdcbe;
+  --color-sg-on-tertiary-fixed: #2a1704;
+  --color-sg-on-tertiary-fixed-variant: #5a422a;
+  --color-sg-tertiary-fixed-dim: #e3c0a0;
+
+  /* System */
+  --color-sg-outline: #a28c89;
+  --color-sg-outline-variant: #544341;
+  --color-sg-error: #ffb4ab;
+  --color-sg-on-error: #690005;
+  --color-sg-error-container: #93000a;
+  --color-sg-on-error-container: #ffdad6;
+
+  /* Spacing (matches provided Tailwind extend) */
+  --spacing-sg-xs: 4px;
+  --spacing-sg-sm: 12px;
+  --spacing-sg-base: 8px;
+  --spacing-sg-md: 24px;
+  --spacing-sg-lg: 40px;
+  --spacing-sg-xl: 64px;
+  --spacing-sg-gutter: 20px;
+  --spacing-sg-margin-mobile: 16px;
+  --spacing-sg-margin-desktop: 48px;
+
+  /* Radii (matches provided Tailwind extend) */
+  --radius-sg: 1rem;
+  --radius-sg-lg: 2rem;
+  --radius-sg-xl: 3rem;
+}
+
+@utility glass-card {
+  background: color-mix(in srgb, #d6336c 16%, rgb(12 8 10) 84%);
+  backdrop-filter: blur(16px);
+  border: 1px solid color-mix(in srgb, #ffb6c1 32%, transparent);
+}
+
+@utility sunset-gradient {
+  background: linear-gradient(96deg, #d6336c 0%, #ff4081 52%, #ffb6c1 100%);
+}
+
+@media (hover: hover) {
+  .button-glow:hover {
+    box-shadow: 0 0 24px color-mix(in srgb, #ff4081 34%, transparent);
+  }
+}
+
+.landing {
+  /* Palette: #D6336C · #FF4081 · #FFB6C1 · #FFF5F8 — one canvas, accents only elsewhere */
+  --landing-bg: color-mix(in srgb, #d6336c 14%, #100a0d 86%);
+  --color-sg-on-surface: #fff5f8;
+  --color-sg-on-surface-variant: #f0b6ca;
+  --color-sg-on-background: #fff5f8;
+  --color-sg-primary: #ffb6c1;
+  --color-sg-secondary: #ff4081;
+  --color-sg-tertiary: #ffb6c1;
+  --color-sg-tertiary-container: #e85f8f;
+  --color-sg-tertiary-fixed: #ffe0ea;
+  --color-sg-primary-container: #d6336c;
+  --color-sg-on-primary-container: #fff5f8;
+  --color-sg-primary-fixed: #ffe5ec;
+  --color-sg-on-primary-fixed: #fff5f8;
+  --color-sg-outline: #f0a4bc;
+  --color-sg-outline-variant: #7a3b52;
+  --color-sg-surface-variant: #3a1424;
+  --font-headline: var(--font-quicksand), system-ui, sans-serif;
+  --font-body: var(--font-be-vietnam), system-ui, sans-serif;
+  min-height: 100dvh;
+  background-color: var(--landing-bg);
+  color: var(--color-sg-on-surface);
+}
+
+.landing .font-headline {
+  font-family: var(--font-headline);
+}
+
+.landing .font-body {
+  font-family: var(--font-body);
+}
+
+.landing main section[id] {
+  scroll-margin-top: 5.5rem;
+}
+
+/* Ambient depth: slow organic wash + optional cursor bloom + light grain */
+.landing-atmosphere {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.landing-atmosphere__wash {
+  position: absolute;
+  inset: -18%;
+  background:
+    radial-gradient(
+      ellipse 58% 50% at 12% 16%,
+      color-mix(in srgb, #ff4081 13%, transparent),
+      transparent 54%
+    ),
+    radial-gradient(
+      ellipse 52% 46% at 92% 72%,
+      color-mix(in srgb, #ffb6c1 11%, transparent),
+      transparent 52%
+    ),
+    radial-gradient(
+      ellipse 44% 38% at 48% 102%,
+      color-mix(in srgb, #d6336c 9%, transparent),
+      transparent 48%
+    );
+  opacity: 0.52;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .landing-atmosphere__wash {
+    animation: landing-atmosphere-drift 48s ease-in-out infinite alternate;
+  }
+
+  @keyframes landing-atmosphere-drift {
+    0% {
+      transform: translate(0%, 0%) scale(1);
+      opacity: 0.46;
+    }
+    100% {
+      transform: translate(1.8%, -1.4%) scale(1.05);
+      opacity: 0.58;
+    }
+  }
+}
+
+.landing-atmosphere__cursor {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    52vmin circle at var(--landing-p-x, 50%) var(--landing-p-y, 42%),
+    color-mix(in srgb, #ffb6c1 9%, transparent) 0%,
+    transparent 54%
+  );
+}
+
+.landing-atmosphere__grain {
+  position: absolute;
+  inset: 0;
+  opacity: 0.045;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.78' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 220px 220px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .landing-atmosphere__wash {
+    animation: none;
+    opacity: 0.5;
+  }
+
+  .landing-atmosphere__cursor {
+    opacity: 0;
+  }
+}

@@ -1,13 +1,19 @@
-import { JetBrains_Mono, Plus_Jakarta_Sans } from "next/font/google";
+import { Be_Vietnam_Pro, JetBrains_Mono, Quicksand } from "next/font/google";
 import type { ReactNode } from "react";
 import { AppProviders } from "@/components/providers/app-providers";
-import { MainLayout } from "@/components/layout/main-layout";
 import { buildPageMetadata } from "@/config/seo";
 import "./globals.css";
 
-const plusJakarta = Plus_Jakarta_Sans({
+const quicksand = Quicksand({
   subsets: ["latin"],
-  variable: "--font-plus-jakarta",
+  variable: "--font-quicksand",
+  display: "swap",
+});
+
+const beVietnam = Be_Vietnam_Pro({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+  variable: "--font-be-vietnam",
   display: "swap",
 });
 
@@ -21,13 +27,11 @@ export const metadata = buildPageMetadata();
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className="h-full">
+    <html lang="en" className="dark h-full scroll-smooth">
       <body
-        className={`${plusJakarta.variable} ${jetbrainsMono.variable} min-h-full antialiased`}
+        className={`${quicksand.variable} ${beVietnam.variable} ${jetbrainsMono.variable} min-h-full antialiased`}
       >
-        <AppProviders>
-          <MainLayout>{children}</MainLayout>
-        </AppProviders>
+        <AppProviders>{children}</AppProviders>
       </body>
     </html>
   );
