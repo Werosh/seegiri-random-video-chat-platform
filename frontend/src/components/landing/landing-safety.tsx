@@ -46,11 +46,14 @@ export function LandingSafety() {
             </ul>
           </div>
 
-          <div className="relative h-96 overflow-hidden md:h-auto md:min-h-[420px]">
+          {/* Avoid `md:h-auto` with `fill`: absolute children do not expand auto height on desktop. */}
+          <div className="relative h-96 w-full overflow-hidden md:h-[28rem] lg:h-[32rem]">
             <Image
               src={LANDING_IMAGES.safety.src}
               alt={LANDING_IMAGES.safety.alt}
               fill
+              unoptimized
+              referrerPolicy="no-referrer"
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"
             />

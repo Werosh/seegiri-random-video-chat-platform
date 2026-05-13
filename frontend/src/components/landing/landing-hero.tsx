@@ -37,13 +37,16 @@ export function LandingHero() {
         </div>
 
         <div className="mt-sg-xl relative mx-auto max-w-5xl px-4">
-          <div className="glass-card rounded-sg-xl aspect-video overflow-hidden p-4 shadow-2xl md:aspect-[21/9]">
-            <div className="rounded-sg-lg relative h-full min-h-[200px] w-full overflow-hidden md:min-h-[280px]">
+          <div className="glass-card rounded-sg-xl p-4 shadow-2xl">
+            {/* `fill` requires explicit dimensions: aspect box on the same element as `relative`. */}
+            <div className="rounded-sg-lg relative aspect-video min-h-[200px] w-full overflow-hidden md:aspect-[21/9] md:min-h-[280px]">
               <Image
                 src={LANDING_IMAGES.hero.src}
                 alt={LANDING_IMAGES.hero.alt}
                 fill
-                className="rounded-sg-lg object-cover brightness-90 grayscale-[0.2]"
+                unoptimized
+                referrerPolicy="no-referrer"
+                className="object-cover brightness-90 grayscale-[0.2]"
                 sizes="(max-width: 768px) 100vw, 1200px"
                 priority
               />
