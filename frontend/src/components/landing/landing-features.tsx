@@ -3,11 +3,8 @@ import { LANDING_SECTION_IDS } from "./constants";
 
 export function LandingFeatures() {
   return (
-    <section
-      id={LANDING_SECTION_IDS.features}
-      className="bg-sg-surface-container-low py-sg-xl"
-    >
-      <div className="px-sg-margin-mobile md:px-sg-margin-desktop mx-auto max-w-6xl">
+    <section id={LANDING_SECTION_IDS.features} className="py-sg-xl sm:py-24 lg:py-28">
+      <div className="px-sg-margin-mobile md:px-sg-margin-desktop mx-auto w-full max-w-6xl">
         <div className="mb-sg-xl text-center">
           <h2 className="font-headline mb-sg-sm text-sg-on-surface text-3xl font-bold tracking-tight md:text-4xl md:leading-tight md:tracking-tight">
             Premium Features
@@ -17,8 +14,8 @@ export function LandingFeatures() {
           </p>
         </div>
 
-        <div className="gap-sg-gutter grid auto-rows-[280px] grid-cols-1 md:grid-cols-12">
-          <div className="glass-card group rounded-sg-xl p-sg-lg relative col-span-1 overflow-hidden md:col-span-8">
+        <div className="gap-sg-gutter grid grid-cols-1 md:grid-cols-12">
+          <div className="glass-card group rounded-sg-xl p-sg-lg relative col-span-1 min-h-[220px] overflow-hidden md:col-span-8 md:min-h-[260px] lg:min-h-[280px]">
             <div className="relative z-10 flex h-full flex-col">
               <Shuffle
                 className="mb-sg-base text-sg-secondary size-9"
@@ -41,7 +38,7 @@ export function LandingFeatures() {
             <div className="bg-sg-primary/5 pointer-events-none absolute -right-10 -bottom-10 h-64 w-64 rounded-full blur-3xl" />
           </div>
 
-          <div className="glass-card rounded-sg-xl border-sg-primary/20 bg-sg-primary-container/10 p-sg-lg col-span-1 flex flex-col justify-center border text-center md:col-span-4">
+          <div className="glass-card rounded-sg-xl p-sg-lg col-span-1 flex min-h-[220px] flex-col justify-center border border-white/10 text-center md:col-span-4 md:min-h-[260px] lg:min-h-[280px]">
             <Globe
               className="mb-sg-md text-sg-primary mx-auto size-12"
               strokeWidth={1.25}
@@ -55,7 +52,7 @@ export function LandingFeatures() {
             </p>
           </div>
 
-          <div className="glass-card rounded-sg-xl p-sg-lg col-span-1 flex flex-col md:col-span-4">
+          <div className="glass-card rounded-sg-xl p-sg-lg col-span-1 flex min-h-[220px] flex-col md:col-span-4 md:min-h-[260px] lg:min-h-[280px]">
             <MessageCircle
               className="mb-sg-base text-sg-tertiary size-9"
               strokeWidth={1.5}
@@ -70,7 +67,7 @@ export function LandingFeatures() {
             </p>
           </div>
 
-          <div className="glass-card rounded-sg-xl p-sg-lg relative col-span-1 flex items-end overflow-hidden md:col-span-8">
+          <div className="glass-card rounded-sg-xl p-sg-lg relative col-span-1 flex min-h-[220px] items-end overflow-hidden md:col-span-8 md:min-h-[260px] lg:min-h-[280px]">
             <div className="relative z-10 flex w-full items-end justify-between">
               <div className="max-w-md">
                 <h3 className="font-headline mb-sg-sm text-sg-on-surface text-3xl leading-snug font-semibold">

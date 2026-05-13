@@ -74,16 +74,16 @@
 }
 
 @utility glass-card {
-  background: rgba(43, 25, 43, 0.4);
+  background: color-mix(in srgb, rgb(15 23 42) 55%, transparent);
   backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 220, 190, 0.1);
+  border: 1px solid color-mix(in srgb, rgb(148 163 184) 18%, transparent);
 }
 
 @utility hero-glow {
   background: radial-gradient(
-    circle at 50% 50%,
-    rgba(239, 193, 62, 0.15) 0%,
-    rgba(30, 13, 31, 0) 70%
+    circle at 50% 45%,
+    color-mix(in srgb, rgb(56 189 248) 14%, transparent) 0%,
+    transparent 68%
   );
 }
 
@@ -98,8 +98,12 @@
 }
 
 .landing {
+  --landing-bg: #0a1018;
   --font-headline: var(--font-quicksand), system-ui, sans-serif;
   --font-body: var(--font-be-vietnam), system-ui, sans-serif;
+  min-height: 100dvh;
+  background-color: var(--landing-bg);
+  color: var(--color-sg-on-surface);
 }
 
 .landing .font-headline {
@@ -108,4 +112,8 @@
 
 .landing .font-body {
   font-family: var(--font-body);
+}
+
+.landing main section[id] {
+  scroll-margin-top: 5.5rem;
 }

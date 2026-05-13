@@ -11,7 +11,7 @@ export function LandingFooter() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="gap-sg-md bg-sg-surface-container px-sg-margin-mobile py-sg-xl md:px-sg-margin-desktop flex w-full flex-col items-center justify-between md:flex-row">
+    <footer className="gap-sg-md px-sg-margin-mobile py-sg-xl md:px-sg-margin-desktop flex w-full flex-col items-center justify-between border-t border-white/10 md:flex-row">
       <div className="flex flex-col items-center md:items-start">
         <div className="font-headline mb-sg-xs text-sg-secondary text-2xl leading-snug font-semibold">
           Seegiri

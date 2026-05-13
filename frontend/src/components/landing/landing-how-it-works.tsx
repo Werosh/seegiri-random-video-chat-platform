@@ -30,11 +30,8 @@ const steps = [
 
 export function LandingHowItWorks() {
   return (
-    <section
-      id={LANDING_SECTION_IDS.howItWorks}
-      className="bg-sg-surface-container-lowest py-sg-xl"
-    >
-      <div className="px-sg-margin-mobile md:px-sg-margin-desktop mx-auto max-w-6xl">
+    <section id={LANDING_SECTION_IDS.howItWorks} className="py-sg-xl sm:py-24 lg:py-28">
+      <div className="px-sg-margin-mobile md:px-sg-margin-desktop mx-auto w-full max-w-6xl">
         <div className="mb-sg-xl text-center">
           <h2 className="font-headline mb-sg-sm text-sg-on-surface text-3xl font-bold tracking-tight md:text-4xl md:leading-tight md:tracking-tight">
             Three Steps to Serenity

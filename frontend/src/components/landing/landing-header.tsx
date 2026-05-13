@@ -4,7 +4,7 @@ import { LANDING_SECTION_IDS } from "./constants";
 
 export function LandingHeader() {
   return (
-    <header className="border-sg-outline-variant/20 bg-sg-surface/60 px-sg-margin-mobile md:px-sg-margin-desktop fixed top-0 z-50 flex h-20 w-full items-center justify-between border-b shadow-sm backdrop-blur-xl">
+    <header className="px-sg-margin-mobile md:px-sg-margin-desktop fixed top-0 z-50 flex h-20 w-full items-center justify-between border-b border-white/10 bg-[color-mix(in_srgb,var(--landing-bg)_82%,transparent)] shadow-sm backdrop-blur-xl">
       <div className="font-headline text-sg-secondary text-2xl font-bold md:text-4xl md:leading-tight md:tracking-tight">
         Seegiri
       </div>

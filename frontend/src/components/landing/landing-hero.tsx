@@ -5,14 +5,14 @@ import { LANDING_IMAGES, LANDING_SECTION_IDS } from "./constants";
 
 export function LandingHero() {
   return (
-    <section className="hero-glow relative flex min-h-screen items-center justify-center overflow-hidden pt-20">
+    <section className="hero-glow relative flex min-h-screen items-center justify-center overflow-hidden pt-20 pb-16 sm:pb-20 lg:pb-24">
       <div className="absolute inset-0 z-0">
-        <div className="bg-sg-primary/10 absolute top-1/4 left-1/4 h-96 w-96 rounded-full blur-[120px]" />
-        <div className="bg-sg-secondary/10 absolute right-1/4 bottom-1/4 h-96 w-96 rounded-full blur-[120px]" />
+        <div className="absolute top-1/4 left-1/4 h-72 w-72 rounded-full bg-sky-500/10 blur-[120px] sm:h-96 sm:w-96" />
+        <div className="absolute right-1/4 bottom-1/4 h-72 w-72 rounded-full bg-indigo-400/10 blur-[120px] sm:h-96 sm:w-96" />
       </div>
 
-      <div className="px-sg-margin-mobile md:px-sg-margin-desktop relative z-10 mx-auto max-w-6xl text-center">
-        <h1 className="font-headline mb-sg-md mx-auto max-w-4xl text-[44px] leading-tight font-bold tracking-tight md:text-[72px]">
+      <div className="px-sg-margin-mobile md:px-sg-margin-desktop relative z-10 mx-auto w-full max-w-6xl text-center">
+        <h1 className="font-headline mb-sg-md mx-auto max-w-4xl text-[clamp(2.25rem,6vw,4.5rem)] leading-tight font-bold tracking-tight">
           Human connection, bathed in a{" "}
           <span className="text-sg-secondary">sunset glow.</span>
         </h1>
@@ -30,7 +30,7 @@ export function LandingHero() {
           </Link>
           <a
             href={`#${LANDING_SECTION_IDS.howItWorks}`}
-            className="border-sg-outline-variant px-sg-xl py-sg-md font-body text-sg-on-surface hover:bg-sg-surface-variant rounded-full border text-lg font-semibold tracking-wide transition-all active:scale-95"
+            className="px-sg-xl py-sg-md font-body text-sg-on-surface rounded-full border border-white/15 text-lg font-semibold tracking-wide transition-all hover:bg-white/5 active:scale-95"
           >
             Learn More
           </a>
@@ -50,7 +50,7 @@ export function LandingHero() {
                 sizes="(max-width: 768px) 100vw, 1200px"
                 priority
               />
-              <div className="rounded-sg-lg from-sg-background/40 pointer-events-none absolute inset-0 bg-gradient-to-t to-transparent" />
+              <div className="rounded-sg-lg pointer-events-none absolute inset-0 bg-gradient-to-t from-[var(--landing-bg)]/55 to-transparent" />
             </div>
           </div>
         </div>

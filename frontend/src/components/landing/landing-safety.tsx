@@ -10,8 +10,11 @@ const promises = [
 
 export function LandingSafety() {
   return (
-    <section id={LANDING_SECTION_IDS.safety} className="py-sg-xl overflow-hidden">
-      <div className="px-sg-margin-mobile md:px-sg-margin-desktop mx-auto max-w-6xl">
+    <section
+      id={LANDING_SECTION_IDS.safety}
+      className="py-sg-xl overflow-hidden sm:py-24 lg:py-28"
+    >
+      <div className="px-sg-margin-mobile md:px-sg-margin-desktop mx-auto w-full max-w-6xl">
         <div className="glass-card rounded-sg-xl grid grid-cols-1 overflow-hidden md:grid-cols-2">
           <div className="p-sg-lg md:p-sg-xl flex flex-col justify-center">
             <div className="mb-sg-md gap-sg-base text-sg-secondary inline-flex items-center">
@@ -57,7 +60,7 @@ export function LandingSafety() {
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
-            <div className="from-sg-background pointer-events-none absolute inset-0 hidden bg-gradient-to-r to-transparent md:block" />
+            <div className="pointer-events-none absolute inset-0 hidden bg-gradient-to-r from-[var(--landing-bg)]/85 to-transparent md:block" />
           </div>
         </div>
       </div>

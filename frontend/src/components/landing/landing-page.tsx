@@ -8,7 +8,7 @@ import { LandingSafety } from "./landing-safety";
 
 export function LandingPage() {
   return (
-    <div className="landing bg-sg-background text-sg-on-surface selection:bg-sg-secondary/30 min-h-dvh">
+    <div className="landing text-sg-on-surface selection:bg-sg-secondary/30">
       <LandingHeader />
       <main>
         <LandingHero />

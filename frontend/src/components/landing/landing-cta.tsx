@@ -3,8 +3,8 @@ import { ROUTES } from "@/constants/routes";
 
 export function LandingCta() {
   return (
-    <section className="py-sg-xl relative">
-      <div className="px-sg-margin-mobile md:px-sg-margin-desktop mx-auto max-w-6xl">
+    <section className="py-sg-xl relative sm:py-24 lg:py-28">
+      <div className="px-sg-margin-mobile md:px-sg-margin-desktop mx-auto w-full max-w-6xl">
         <div className="glass-card rounded-sg-xl p-sg-lg md:p-sg-xl relative overflow-hidden text-center">
           <div className="pointer-events-none absolute inset-0 z-0 opacity-20">
             <div className="sunset-gradient absolute top-0 left-1/2 h-full w-full -translate-x-1/2 blur-[120px]" />
