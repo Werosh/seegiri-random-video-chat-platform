@@ -27,7 +27,7 @@ export const metadata = buildPageMetadata();
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className="dark h-full">
+    <html lang="en" className="dark h-full scroll-smooth">
       <body
         className={`${quicksand.variable} ${beVietnam.variable} ${jetbrainsMono.variable} min-h-full antialiased`}
       >
