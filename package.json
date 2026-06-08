@@ -1,7 +1,7 @@
 {
   "name": "seegiri",
   "private": true,
-  "description": "Seegiri — production-grade random video chat platform (monorepo root)",
+  "description": "Seegiri -production-grade random video chat platform (monorepo root)",
   "scripts": {
     "prepare": "husky",
     "lint": "npm run lint --prefix frontend && npm run lint --prefix backend",

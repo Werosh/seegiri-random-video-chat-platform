@@ -1,4 +1,4 @@
-/* Seegiri landing — design tokens (Tailwind v4 @theme) + utilities */
+/* Seegiri landing -design tokens (Tailwind v4 @theme) + utilities */
 
 @theme inline {
   /* Surfaces */
@@ -90,7 +90,7 @@
 }
 
 .landing {
-  /* Palette: #D6336C · #FF4081 · #FFB6C1 · #FFF5F8 — one canvas, accents only elsewhere */
+  /* Palette: #D6336C · #FF4081 · #FFB6C1 · #FFF5F8 -one canvas, accents only elsewhere */
   --landing-bg: color-mix(in srgb, #d6336c 14%, #100a0d 86%);
   --color-sg-on-surface: #fff5f8;
   --color-sg-on-surface-variant: #f0b6ca;

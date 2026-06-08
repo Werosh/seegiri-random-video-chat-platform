@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Seegiri realtime API — Express + Socket.IO (Render/VPS ready)",
+  "description": "Seegiri realtime API -Express + Socket.IO (Render/VPS ready)",
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsc",

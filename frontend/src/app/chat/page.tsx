@@ -4,7 +4,7 @@ import { buildPageMetadata } from "@/config/seo";
 export const metadata: Metadata = buildPageMetadata({
   title: "Chat",
   description:
-    "Seegiri chat experience — realtime video and messaging will arrive in Phases 3–6.",
+    "Seegiri chat experience -realtime video and messaging will arrive in Phases 3–6.",
   path: "/chat",
 });
 
