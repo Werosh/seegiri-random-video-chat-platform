@@ -3,7 +3,7 @@ import { buildPageMetadata } from "@/config/seo";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "Admin",
-  description: "Seegiri administration — Firebase-backed tooling will land in Phase 7.",
+  description: "Seegiri administration -Firebase-backed tooling will land in Phase 7.",
   path: "/admin",
   robots: { index: false, follow: false },
 });
